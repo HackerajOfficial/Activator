@@ -1,5 +1,5 @@
-# Activator By Hackeraj
-ActivatorByHackeraj is collection of Windows tools Activator.
+# Activator
+Activator is collection of Windows tools Activator.
 
 List of Tools
    * [Windows 7, 8, 10 Activator](https://github.com/HackerajOfficial/ActivatorByHackeraj/blob/main/windows-10-8.1-8-7.md)
