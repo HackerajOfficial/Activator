@@ -54,6 +54,7 @@ echo.
 @echo Press any key to exit . . .
 @PAUSE >nul
 ```
+More Details article [Click Here](http://hackeraj.raaz.info.np/2021/09/test-mode.html)
 
 [Facebook](https://www.facebook.com/ItsMeHackeraj/)
 [Twitter](https://twitter.com/Hackeraj_np/)
