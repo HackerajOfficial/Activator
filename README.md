@@ -11,6 +11,7 @@ List of Tools
    * [Office 2016 Activator](https://github.com/HackerajOfficial/ActivatorByHackeraj/blob/main/Office-2016-Activator.md)
    * [Office 2019 Activator](https://github.com/HackerajOfficial/ActivatorByHackeraj/blob/main/Office%202019%20Activator.md)
    * [Office 365 Activator](https://github.com/HackerajOfficial/ActivatorByHackeraj/blob/main/Office%20365%20Activator.md)
+   * [Universal Watermark Disabler](https://github.com/HackerajOfficial/ActivatorByHackeraj/blob/main/Office%20365%20Activator.md)
 
 [Facebook](https://www.facebook.com/ItsMeHackeraj/)
 [Twitter](https://twitter.com/Hackeraj_np/)
