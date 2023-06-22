@@ -1,0 +1,17 @@
+@echo off
+title Activate Microsoft Office 2010 for FREE!&cls&echo ============================================================================&echo #Project: Activating Microsoft software products for FREE without software&echo ============================================================================&echo.&echo #Supported products:&echo - Microsoft Office 2010 Standard&echo - Microsoft Office 2010 Professional Plus&echo.&echo.&echo Replacing Retail licenses with Volume licenses...&echo.&echo Please wait...&echo.&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office14\ospp.vbs" set folder="%ProgramFiles(x86)%\Microsoft Office\Office14" && set OfficeArchType=32)&(if exist "%ProgramFiles%\Microsoft Office\Office14\ospp.vbs" set folder="%ProgramFiles%\Microsoft Office\Office14" && set OfficeArchType=64)&cd /d %~dp0\"MSGuides.com_Office2010\"&(for %%G in (pkeyconfig*.xrm-ms) do cscript //nologo %folder%\ospp.vbs /inslic:%%G >nul)&cd /d %~dp0\"MSGuides.com_Office2010\Volume"&(for %%G in (ProPlus*.xrm-ms) do cscript //nologo %folder%\ospp.vbs /inslic:%%G >nul)&cd /d %~dp0\"MSGuides.com_Office2010\Volume\ProPlus"
+if %OfficeArchType%==32 regedit /s 32bit.reg
+if %OfficeArchType%==64 regedit /s 64bit.reg
+echo.&echo Successful!&cd /d %folder%&echo.&echo ============================================================================&echo Activating your Office...&cscript //nologo slmgr.vbs /ckms >nul&cscript //nologo ospp.vbs /setprt:1688 >nul&cscript //nologo ospp.vbs /unpkey:8R6BM >nul&cscript //nologo ospp.vbs /unpkey:H3GVB >nul&cscript //nologo ospp.vbs /inpkey:V7QKV-4XVVR-XYV4D-F7DFM-8R6BM >nul&cscript //nologo ospp.vbs /inpkey:VYBBJ-TRJPB-QFQRF-QFT4D-H3GVB >nul&set i=1
+:server
+if %i%==1 set KMS_Sev=kms7.MSGuides.com
+if %i%==2 set KMS_Sev=kms8.MSGuides.com
+if %i%==3 set KMS_Sev=kms9.MSGuides.com
+if %i%==4 goto notsupported
+cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul&echo ============================================================================&echo.&echo.
+cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&echo ============================================================================&echo.&echo #My official blog: MSGuides.com&echo.&echo #How it works: bit.ly/kms-server&echo.&echo #Please feel free to contact me at msguides.com@gmail.com if you have any questions or concerns.&echo.&echo #Please consider supporting this project: donate.msguides.com&echo #Your support is helping me keep my servers running everyday!&echo.&echo ============================================================================&choice /n /c YN /m "Would you like to visit my blog [Y,N]?" & if errorlevel 2 exit) || (echo The connection to my KMS server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+explorer "http://MSGuides.com"&goto halt
+:notsupported
+echo.&echo ============================================================================&echo Sorry! Your version is not supported.
+:halt
+pause >nul
